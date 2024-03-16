@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="banner">
+		<img src="images/logo.png" class="logo">
+		<div class="banner-text">
+			<h1> Hair Salon</h1>
+			<p>Style Your Hair Is Style Your Life </p>
+			<div class="banner-btn">  
+				<a href="#"><span></span>Find Out</a>
+				<a href="#"><span></span>Read More</a>
+			</div>
+		</div>
+	</section>
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">FEATURES</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">TESTIMONIALS</a></li>
+				<li><a href="#">MEET US</a></li>					
+			</ul>
+		</nav>
+	</div>
+	<div id="menuBtn">
+		<img src="images/menu.png" id="menu">
+	</div>
+	<script >
+		
+		var menuBtn =document.getElementById("menuBtn")
+		var sideNav =document.getElementById("sideNav")
+		var menu =document.getElementById("menu")
+		sideNav.style.right="-250px";
+		menuBtn.onclick=function(){
+			if(sideNav.style.right=="-250px"){
+				sideNav.style.right="0";
+				menu.src="images/close.png"
+			}
+			else{
+				sideNav.style.right="-250px";
+				menu.src="images/menu.png"
+			}
+		}
+	</script>	
+</body>
+</html>
